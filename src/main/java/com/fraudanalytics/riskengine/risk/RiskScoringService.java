@@ -1,13 +1,17 @@
 package com.fraudanalytics.riskengine.risk;
 
 import com.fraudanalytics.riskengine.transaction.Transaction;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import com.fraudanalytics.riskengine.transaction.TransactionRepository;
 
+@RequiredArgsConstructor
 @Service
 public class RiskScoringService {
 
+    private final TransactionRepository transactionRepository;
     public int calculateRiskScore(Transaction transaction) {
         int score = 0;
 
