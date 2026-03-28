@@ -104,7 +104,3 @@ fraud-risk-analytics-engine/
    ```
 *The dashboard interface will spin up at `http://localhost:5173`. Open this URL in your browser to begin.*
 
----
-
-## 🤝 Contributing
-Contributions, issues, and feature requests are highly welcome! Feel free to check the issues page.
